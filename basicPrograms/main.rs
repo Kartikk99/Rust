@@ -1,3 +1,10 @@
+#[derive(Debug)]
+struct Person <'a>{
+    name: &'a str,
+    age: u8
+}
+
+
 fn main(){
     println!("{} days", 31);
 
@@ -22,4 +29,10 @@ fn main(){
     println!("Hello {1} is {2:.0$}", 5, "x", 0.01);
     println!("Hello {} is {:.*}", "x", 5, 0.01);
     println!("Hello {} is {number:.prec$}", "x", prec=2, number=3.141592);
+
+    let name = "Kartik";
+    let age = 25;
+    let obj = Person{name, age};
+
+    println!("{:#?}", obj);
 }
