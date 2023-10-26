@@ -1,0 +1,6 @@
+A. cargo new => To create a new project using cargo
+B. cargo build => To build a project
+C. cargo run => To build and run the project
+D. cargo check => Build a project without producing the binary to check for errors
+
+Notes : Cargo stores all the binary in the following path : ./target/debug
