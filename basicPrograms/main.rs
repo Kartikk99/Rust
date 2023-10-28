@@ -33,6 +33,7 @@ fn main(){
     let name = "Kartik";
     let age = 25;
     let obj = Person{name, age};
-
+    
+    // :#? is used for pretty print
     println!("{:#?}", obj);
 }
